@@ -4,6 +4,16 @@
   <groupId>org.acme</groupId>
   <artifactId>openapi-swaggerui-quickstart</artifactId>
   <version>0.6.1-SNAPSHOT</version>
+
+  <scm>
+    <!--    <developerConnection>scm:git:https://github.com/Krasobas/openapi-swaggerui-quickstart-.git</developerConnection>-->
+    <!--    <tag>HEAD</tag>-->
+    <url>{HTTP_URL_GIT_REPOSITORY}</url> <!-- URL HTTP de clone do projeto -->
+    <connection>scm:git:{HTTP_URL_GIT_REPOSITORY}</connection> <!-- URL HTTP de clone do projeto -->
+    <developerConnection>scm:git:{HTTP_URL_GIT_REPOSITORY}</developerConnection> <!-- URL HTTP de clone do projeto -->
+    <tag>@{project.version}</tag>
+  </scm>
+
   <properties>
     <compiler-plugin.version>3.10.1</compiler-plugin.version>
     <maven.compiler.release>11</maven.compiler.release>
@@ -64,11 +74,14 @@
       <artifactId>maven-release-plugin</artifactId>
       <version>3.0.0-M7</version>
     </dependency>
+    <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>build-helper-maven-plugin</artifactId>
+      <version>3.2.0</version>
+      <type>maven-plugin</type>
+    </dependency>
   </dependencies>
-  <scm>
-    <developerConnection>scm:git:https://github.com/Krasobas/openapi-swaggerui-quickstart-.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
+
   <build>
     <plugins>
       <plugin>
@@ -129,9 +142,10 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>3.0.0-M7</version>
         <configuration>
-          <preparationGoals>package</preparationGoals>
           <tagNameFormat>@{project.version}</tagNameFormat>
-          <remoteTagging>false</remoteTagging>
+          <checkModificationExcludes>
+            <checkModificationExclude>pom.xml</checkModificationExclude>
+          </checkModificationExcludes>
         </configuration>
       </plugin>
     </plugins>
