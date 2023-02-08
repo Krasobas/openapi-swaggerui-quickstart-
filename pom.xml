@@ -3,14 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.acme</groupId>
   <artifactId>openapi-swaggerui-quickstart</artifactId>
-  <version>0.6.1-SNAPSHOT</version>
+  <version>0.6.0</version>
 
   <scm>
-    <!--    <developerConnection>scm:git:https://github.com/Krasobas/openapi-swaggerui-quickstart-.git</developerConnection>-->
-    <!--    <tag>HEAD</tag>-->
-    <url>https://github.com/Krasobas/openapi-swaggerui-quickstart-.git</url> <!-- URL HTTP de clone do projeto -->
-    <connection>scm:git:https://github.com/Krasobas/openapi-swaggerui-quickstart-.git</connection> <!-- URL HTTP de clone do projeto -->
-    <developerConnection>scm:git:https://github.com/Krasobas/openapi-swaggerui-quickstart-.git</developerConnection> <!-- URL HTTP de clone do projeto -->
+    <url>https://github.com/Krasobas/openapi-swaggerui-quickstart-</url> <!-- URL HTTP de clone do projeto -->
+    <connection>scm:git:https://github.com/Krasobas/openapi-swaggerui-quickstart-</connection> <!-- URL HTTP de clone do projeto -->
+    <developerConnection>scm:git:https://github.com/Krasobas/openapi-swaggerui-quickstart-</developerConnection> <!-- URL HTTP de clone do projeto -->
     <tag>@{project.version}</tag>
   </scm>
 
