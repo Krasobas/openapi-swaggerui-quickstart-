@@ -60,9 +60,14 @@
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-release-plugin</artifactId>
+      <version>3.0.0-M7</version>
+    </dependency>
   </dependencies>
   <scm>
-    <developerConnection>scm:git:https://github.com/my-org/my-project.git</developerConnection>
+    <developerConnection>scm:git:https://github.com/Krasobas/openapi-swaggerui-quickstart-.git</developerConnection>
   </scm>
   <build>
     <plugins>
@@ -118,6 +123,11 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M7</version>
       </plugin>
     </plugins>
   </build>
